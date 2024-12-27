@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\activity_todo.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_todo.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\add_newexam.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\add_newexam.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_class_add.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_class_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_delete_screen.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_delete_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_classes.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_classes.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\activity_fragment_caller.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_fragment_caller.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_scrolling.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_scrolling.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_back.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_new_class.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_new_class.xml"
+    },
+    {
+        "merged": "com.example.schedulingproject.app-mergeDebugResources-47:/layout/add_newtask.xml",
+        "source": "com.example.schedulingproject.app-main-50:/layout/add_newtask.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_dashboard.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\item_class.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\item_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\task_layout.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\task_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\add_newtask.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\add_newtask.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\fragment_notifications.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\activity_first.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-mergeDebugResources-47:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_main.xml"
+    }
+]

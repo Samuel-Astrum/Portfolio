@@ -1,0 +1,1077 @@
+#include "gba.h"
+
+volatile unsigned short* videoBuffer = (volatile unsigned short*) 0x6000000;
+
+void drawHorizontalLine(int y, int x1, int x2, unsigned short color) {
+    for (int i = x1; i <= x2; i++) {
+        setPixel(i, y, color);
+    }
+}
+
+void drawVerticalLine(int x, int y1, int y2, unsigned short color) {
+    for (int i = y1; i <= y2; i++) {
+        setPixel(x, i, color);
+    }
+}
+
+// TODO: Add this function from Lab 2
+void drawRectangle(int x, int y, int width, int height, u16 color) {
+    for (int i = 0; i < width; i++) {
+        for (int j = 0; j < height; j++) {
+            setPixel(x + i, y + j, color);
+        }
+    }
+}
+
+void fillScreen(unsigned short color) {
+    for (int i = 0; i < 38400; i++) {
+        videoBuffer[i] = color;
+    }
+}
+
+void head1() {
+    drawRectangle(134, 19, 3, 2, BLACK);
+    drawRectangle(133, 20, 1, 2, BLACK);
+    drawRectangle(132, 21, 1, 2, BLACK);
+    drawRectangle(131, 22, 1, 2, BLACK);
+    drawRectangle(130, 23, 1, 2, BLACK);
+    setPixel(129, 24, BLACK);
+    drawRectangle(128, 25, 2, 3, BLACK);
+    setPixel(127, 27, BLACK);
+    setPixel(128, 28, BLACK);
+    drawRectangle(126, 28, 2, 2, BLACK);
+    drawRectangle(136, 21, 1, 4, BLACK);
+    drawRectangle(134, 21, 2, 5, DARK_GREEN);
+    drawRectangle(126, 30, 1, 3, DARK_GREEN);
+    drawRectangle(127, 32, 5, 2, DARK_GREEN);
+    drawRectangle(127, 30, 6, 2, DARK_GREEN);
+    drawRectangle(130, 25, 3, 5, DARK_GREEN);
+    drawRectangle(133, 22, 1, 7, DARK_GREEN);
+    setPixel(134, 26, DARK_GREEN);
+    setPixel(131, 24, DARK_GREEN);
+    setPixel(128, 29, DARK_GREEN);
+    drawRectangle(132, 23, 1, 2, DARK_GREEN);
+    drawRectangle(129, 28, 1, 2, DARK_GREEN);
+    drawRectangle(116, 30, 10, 2, BLACK);
+    drawRectangle(135, 26, 1, 2, BLACK);
+    drawRectangle(134, 27, 1, 4, BLACK);
+    drawRectangle(133, 29, 1, 6, BLACK);
+    drawRectangle(134, 33, 1, 2, BLACK);
+    setPixel(135, 34, BLACK);
+    drawRectangle(132, 32, 1, 4, BLACK);
+    drawRectangle(126, 34, 6, 2, BLACK);
+    drawRectangle(125, 32, 1, 3, BLACK);
+    setPixel(126, 33, BLACK);
+    drawRectangle(116, 32, 6, 1, BLACK);
+    drawRectangle(113, 33, 5, 2, BLACK);
+    drawRectangle(111, 35, 5, 4, BLACK);
+    drawRectangle(111, 40, 7, 1, BLACK);
+    drawRectangle(107, 41, 5, 1, BLACK);
+    drawRectangle(105, 42, 4, 1, BLACK);
+    drawRectangle(105, 43, 2, 3, BLACK);
+    drawRectangle(107, 45, 9, 1, BLACK);
+    drawRectangle(111, 44, 7, 1, BLACK);
+    drawRectangle(116, 41, 2, 3, BLACK);
+    drawRectangle(110, 46, 3, 7, BLACK);
+    drawRectangle(112, 53, 4, 3, BLACK);
+    drawRectangle(113, 49, 3, 4, BLACK);
+    drawRectangle(113, 54, 3, 2, BLACK);
+    drawRectangle(125, 38, 5, 2, BLACK);
+    drawRectangle(125, 40, 2, 11, BLACK);
+    drawRectangle(127, 40, 4, 11, BLACK);
+    drawRectangle(127, 40, 2, 7, WHITE);
+    drawRectangle(132, 40, 5, 10, BLACK);
+    drawRectangle(134, 41, 2, 6, WHITE);
+    drawRectangle(112, 41, 4, 3, DARK_GREEN);
+    drawRectangle(109, 42, 3, 2, DARK_GREEN);
+    drawRectangle(107, 43, 2, 1, DARK_GREEN);
+    drawRectangle(107, 44, 4, 1, DARK_GREEN);
+    drawRectangle(119, 51, 3, 4, BLACK);
+    drawRectangle(122, 53, 4, 2, BLACK);
+    drawRectangle(126, 52, 7, 4, BLACK);
+    drawRectangle(139, 43, 1, 13, BLACK);
+    drawRectangle(136, 53, 3, 3, BLACK);
+    drawRectangle(140, 47, 6, 6, BLACK);
+    drawRectangle(140, 48, 5, 3, DARK_GREEN);
+    drawRectangle(116, 55, 6, 1, TAN);
+    drawRectangle(122, 56, 3, 2, TAN);
+    drawRectangle(128, 56, 5, 2, TAN);
+    drawRectangle(125, 57, 3, 1, TAN);
+    drawRectangle(114, 56, 8, 4, BLACK);
+    drawRectangle(122, 58, 10, 3, BLACK);
+    drawRectangle(133, 55, 3, 4, BLACK);
+    drawRectangle(113, 46, 3, 3, TAN);
+    drawRectangle(116, 52, 3, 3, TAN);
+    drawRectangle(120, 48, 2, 2, TAN);
+    drawRectangle(121, 39, 2, 2, TAN);
+    drawRectangle(131, 37, 2, 2, TAN);
+    
+   
+    
+
+    
+}
+void head2() {
+    drawRectangle(111, 16, 2, 18, BLACK);
+    drawRectangle(113, 16, 3, 5, BLACK);
+    drawRectangle(116, 19, 1, 3, BLACK);
+    drawRectangle(113, 21, 3, 12, DARK_GREEN);
+    drawRectangle(116, 22, 1, 11, DARK_GREEN);
+    drawRectangle(117, 25, 2, 8, DARK_GREEN);
+    setPixel(117, 24, DARK_GREEN);
+    drawRectangle(119, 27, 1, 2, DARK_GREEN);
+    drawRectangle(119, 29, 2, 4, DARK_GREEN);
+    drawRectangle(117, 21, 1, 3, BLACK);
+    drawRectangle(118, 22, 1, 3, BLACK);
+    drawRectangle(119, 24, 1, 3, BLACK);
+    drawRectangle(120, 25, 1, 3, BLACK);
+    drawRectangle(121, 26, 1, 7, BLACK);
+    drawRectangle(122, 28, 1, 5, BLACK);
+    drawRectangle(123, 29, 1, 4, BLACK);
+    setPixel(124, 31, BLACK);
+    drawRectangle(124, 32, 2, 1, BLACK);
+    drawRectangle(102, 33, 24, 2, BLACK);
+    drawRectangle(107, 30, 4, 3, BLACK);
+    drawRectangle(102, 35, 2, 20, BLACK);
+    drawRectangle(104, 35, 3, 3, BLACK);
+    drawRectangle(93, 41, 9, 7, BLACK);
+    drawRectangle(94, 43, 7, 4, DARK_GREEN);
+    drawRectangle(91, 42, 2, 6, BLACK);
+    drawRectangle(87, 43, 4, 2, BLACK);
+    drawRectangle(108, 59, 20, 2, BLACK);
+    drawRectangle(104, 51, 3, 7, BLACK);
+    drawRectangle(107, 55, 6, 4, BLACK);
+    drawRectangle(113, 58, 7, 1, BLACK);
+    drawRectangle(120, 57, 3, 2, BLACK);
+    drawRectangle(123, 54, 5, 5, BLACK);
+    drawRectangle(128, 48, 3, 7, BLACK);
+    drawRectangle(129, 38, 2, 1, BLACK);
+    drawRectangle(129, 39, 7, 1, BLACK);
+    drawRectangle(139, 40, 8, 4, DARK_GREEN);
+    drawRectangle(130, 44, 5, 1, DARK_GREEN);
+    drawRectangle(130, 45, 2, 3, BLACK);
+    drawRectangle(132, 45, 3, 2, BLACK);
+    drawRectangle(135, 44, 4, 2, BLACK);
+    drawRectangle(138, 40, 2, 4, BLACK);
+    drawRectangle(104, 46, 3, 6, TAN);
+    setPixel(107, 51, TAN);
+    drawRectangle(107, 52, 3, 3, TAN);
+    drawRectangle(110, 53, 3, 2, TAN);
+    drawRectangle(113, 53, 7, 5, TAN);
+    drawRectangle(120, 53, 3, 4, TAN);
+    setPixel(122, 52, TAN);
+    drawRectangle(123, 52, 5, 2, TAN);
+    setPixel(124, 51, TAN);
+    drawRectangle(125, 48, 3, 4, TAN);
+    setPixel(127, 47, TAN);
+    drawRectangle(128, 46, 2, 2, TAN);
+    drawRectangle(107, 49, 3, 2, BLACK);
+    drawRectangle(110, 50, 2, 3, BLACK);
+    drawRectangle(108, 51, 2, 1, BLACK);
+    drawRectangle(112, 51, 10, 2, BLACK);
+    drawRectangle(120, 50, 5, 1, BLACK);
+    drawRectangle(122, 51, 2, 1, BLACK);
+    drawRectangle(123, 49, 2, 1, BLACK);
+    drawRectangle(124, 39, 2, 9, BLACK);
+    drawRectangle(120, 37, 4, 12, BLACK);
+    drawRectangle(120, 39, 4, 7, WHITE);
+    drawRectangle(119, 38, 1, 10, BLACK);
+    drawRectangle(110, 39, 2, 10, BLACK);
+    drawRectangle(112, 37, 3, 12, BLACK);
+    drawRectangle(112, 39, 2, 7, WHITE);
+    drawRectangle(114, 41, 1, 4, WHITE);
+    drawRectangle(115, 39, 2, 9, BLACK);
+    drawRectangle(106, 41, 2, 2, TAN);
+
+    
+    
+
+}
+void head3() {
+    drawRectangle(98, 30, 1, 8, BLACK);
+    drawRectangle(98, 38, 7, 2, BLACK);
+    drawRectangle(99, 28, 1, 10, DARK_GREEN);
+    drawRectangle(100, 27, 3, 11, DARK_GREEN);
+    drawRectangle(100, 25, 3, 2, BLACK);
+    drawRectangle(103, 26, 1, 2, BLACK);
+    drawRectangle(103, 28, 2, 10, BLACK);
+    drawRectangle(105, 32, 3, 2, BLACK);
+    drawRectangle(95, 35, 3, 4, BLACK);
+    drawRectangle(92, 37, 3, 3, BLACK);
+    drawRectangle(91, 40, 4, 1, BLACK);
+    drawRectangle(91, 41, 7, 3, BLACK);
+    drawRectangle(97, 44, 1, 9, BLACK);
+    drawRectangle(87, 44, 7, 6, BLACK);
+    drawRectangle(89, 46, 2, 2, DARK_GREEN);
+    drawRectangle(94, 44, 3, 5, WHITE);
+    drawRectangle(94, 49, 3, 4, BLACK);
+    drawRectangle(92, 50, 2, 3, BLACK);
+    drawRectangle(92, 53, 3, 3, BLACK);
+    drawRectangle(93, 56, 4, 3, BLACK);
+    drawRectangle(100, 41, 7, 11, BLACK);
+    drawRectangle(101, 43, 3, 8, WHITE);
+    drawRectangle(111, 43, 12, 7, BLACK);
+    drawRectangle(112, 45, 7, 2, DARK_GREEN);
+    drawRectangle(97, 54, 13, 2, BLACK);
+    drawRectangle(107, 52, 3, 2, BLACK);
+    drawRectangle(97, 58, 6, 4, BLACK);
+    drawRectangle(103, 60, 10, 2, BLACK);
+    drawRectangle(110, 58, 8, 2, BLACK);
+    setPixel(118, 40, BLACK);
+    drawRectangle(119, 41, 2, 2, BLACK);
+    drawRectangle(117, 41, 2, 1, TAN);
+    drawRectangle(112, 42, 7, 1, BLACK);
+    drawRectangle(109, 38, 2, 2, TAN);
+    drawRectangle(120, 50, 2, 2, BLACK);
+    drawRectangle(118, 52, 3, 3, BLACK);
+    drawRectangle(118, 55, 3, 4, BLACK);
+    drawRectangle(116, 55, 2, 3, BLACK);
+    drawRectangle(97, 57, 6, 1, TAN);
+    drawRectangle(103, 57, 2, 3, TAN);
+    drawRectangle(105, 56, 5, 4, TAN);
+    drawRectangle(110, 54, 1, 4, TAN);
+    drawRectangle(111, 52, 1, 6, TAN);
+    drawRectangle(112, 51, 1, 7, TAN);
+    drawRectangle(113, 55, 3, 3, TAN);
+    drawRectangle(113, 50, 5, 5, TAN);
+    drawRectangle(118, 50, 1, 2, TAN);
+    setPixel(119, 51, TAN);
+
+
+}
+void head4() {
+    drawRectangle(98, 30, 1, 8, BLACK);
+    drawRectangle(98, 38, 7, 2, BLACK);
+    drawRectangle(99, 28, 1, 10, DARK_GREEN);
+    drawRectangle(100, 27, 3, 11, DARK_GREEN);
+    drawRectangle(100, 25, 3, 2, BLACK);
+    drawRectangle(103, 26, 1, 2, BLACK);
+    drawRectangle(103, 28, 2, 10, BLACK);
+    drawRectangle(105, 32, 3, 2, BLACK);
+    drawRectangle(95, 35, 3, 4, BLACK);
+    drawRectangle(92, 37, 3, 3, BLACK);
+    drawRectangle(91, 40, 4, 1, BLACK);
+    drawRectangle(91, 41, 7, 3, BLACK);
+    drawRectangle(97, 44, 1, 9, BLACK);
+    drawRectangle(87, 44, 7, 6, BLACK);
+    drawRectangle(89, 46, 2, 2, DARK_GREEN);
+    drawRectangle(94, 44, 3, 5, WHITE);
+    drawRectangle(94, 49, 3, 4, BLACK);
+    drawRectangle(92, 50, 2, 3, BLACK);
+    drawRectangle(92, 53, 3, 3, BLACK);
+    drawRectangle(93, 56, 4, 3, BLACK);
+    drawRectangle(100, 41, 7, 11, BLACK);
+    drawRectangle(101, 43, 3, 8, WHITE);
+    drawRectangle(111, 43, 12, 7, BLACK);
+    drawRectangle(112, 45, 7, 2, DARK_GREEN);
+    drawRectangle(97, 54, 13, 2, BLACK);
+    drawRectangle(107, 52, 3, 2, BLACK);
+    drawRectangle(97, 58, 6, 4, BLACK);
+    drawRectangle(103, 60, 10, 2, BLACK);
+    drawRectangle(110, 58, 8, 2, BLACK);
+    setPixel(118, 40, BLACK);
+    drawRectangle(119, 41, 2, 2, BLACK);
+    drawRectangle(117, 41, 2, 1, TAN);
+    drawRectangle(112, 42, 7, 1, BLACK);
+    drawRectangle(109, 38, 2, 2, TAN);
+    drawRectangle(120, 50, 2, 2, BLACK);
+    drawRectangle(118, 52, 3, 3, BLACK);
+    drawRectangle(118, 55, 3, 4, BLACK);
+    drawRectangle(116, 55, 2, 3, BLACK);
+    drawRectangle(97, 57, 6, 1, TAN);
+    drawRectangle(103, 57, 2, 3, TAN);
+    drawRectangle(105, 56, 5, 4, TAN);
+    drawRectangle(110, 54, 1, 4, TAN);
+    drawRectangle(111, 52, 1, 6, TAN);
+    drawRectangle(112, 51, 1, 7, TAN);
+    drawRectangle(113, 55, 3, 3, TAN);
+    drawRectangle(113, 50, 5, 5, TAN);
+    drawRectangle(118, 50, 1, 2, TAN);
+    setPixel(119, 51, TAN);
+    drawRectangle(99, 56, 10, 1, BLACK);
+    drawRectangle(104, 57, 4, 1, BLACK);
+}
+void topMid1() {
+    drawRectangle(106, 60, 20, 3, BLACK);
+    drawRectangle(123, 63, 3, 1, BLACK);
+    drawRectangle(126, 62, 1, 3, BLACK);
+    drawRectangle(104, 63, 5, 2, BLACK);
+    drawRectangle(103, 65, 2, 2, BLACK);
+    drawRectangle(101, 66, 3, 5, BLACK);
+    drawRectangle(100, 71, 2, 8, BLACK);
+    drawRectangle(101, 79, 2, 3, BLACK);
+    drawRectangle(102, 82, 3, 2, BLACK);
+    drawRectangle(103, 84, 3, 2, BLACK);
+    drawRectangle(105, 86, 4, 2, BLACK);
+    drawRectangle(107, 88, 4, 2, BLACK);
+    drawRectangle(111, 89, 11, 2, BLACK);
+    drawRectangle(122, 88, 2, 2, BLACK);
+    drawRectangle(123, 86, 3, 3, BLACK);
+    drawRectangle(126, 85, 3, 3, BLACK);
+    drawRectangle(127, 82, 3, 3, BLACK);
+    drawRectangle(129, 80, 2, 2, BLACK);
+    drawRectangle(111, 67, 8, 2, BLACK);
+    drawRectangle(111, 69, 3, 2, BLACK);
+    drawRectangle(118, 69, 2, 7, BLACK);
+    drawRectangle(108, 70, 3, 3, BLACK);
+    drawRectangle(108, 73, 1, 3, BLACK);
+    drawRectangle(109, 75, 9, 1, BLACK);
+    drawRectangle(114, 69, 4, 6, DARK_GREEN);
+    drawRectangle(111, 71, 3, 4, DARK_GREEN);
+    drawRectangle(109, 73, 2, 2, DARK_GREEN);
+    drawRectangle(109, 63, 2, 2, TAN);
+    drawRectangle(106, 65, 3, 2, TAN);
+    drawRectangle(104, 67, 4, 4, TAN);
+    drawRectangle(102, 71, 6, 8, TAN);
+    drawRectangle(103, 79, 6, 3, TAN);
+    drawRectangle(105, 82, 6, 2, TAN);
+    drawRectangle(106, 84, 6, 2, TAN);
+    drawRectangle(112, 85, 5, 1, TAN);
+    drawRectangle(109, 86, 14, 2, TAN);
+    drawRectangle(111, 88, 10, 1, TAN);
+    drawRectangle(122, 84, 4, 2, TAN);
+    drawRectangle(114, 81, 2, 2, TAN);
+    drawRectangle(123, 77, 2, 2, TAN);
+    drawRectangle(122, 66, 2, 2, TAN);
+
+}
+void topMid2() {
+    drawRectangle(106, 61, 6, 2, BLACK);
+    drawRectangle(105, 63, 2, 2, BLACK);
+    drawRectangle(103, 64, 2, 2, BLACK);
+    drawRectangle(102, 66, 2, 2, BLACK);
+    drawRectangle(101, 68, 2, 1, BLACK);
+    drawRectangle(97, 69, 9, 3, BLACK);
+    drawRectangle(106, 71, 1, 8, BLACK);
+    drawRectangle(94, 71, 3, 2, BLACK);
+    drawRectangle(91, 72, 3, 2, BLACK);
+    drawRectangle(90, 73, 1, 3, BLACK);
+    drawRectangle(91, 76, 7, 1, BLACK);
+    drawRectangle(98, 77, 3, 1, BLACK);
+    drawRectangle(101, 77, 5, 3, BLACK);
+    drawRectangle(98, 72, 8, 5, DARK_GREEN);
+    drawRectangle(97, 72, 1, 4, DARK_GREEN);
+    drawRectangle(94, 73, 3, 3, DARK_GREEN);
+    drawRectangle(91, 74, 3, 2, DARK_GREEN);
+    drawRectangle(124, 63, 5, 4, BLACK);
+    drawRectangle(124, 67, 2, 3, BLACK);
+    setPixel(126, 69, BLACK);
+    setPixel(125, 70, BLACK);
+    drawRectangle(126, 70, 6, 2, BLACK);
+    drawRectangle(131, 68, 2, 2, BLACK);
+    drawRectangle(133, 66, 2, 2, BLACK);
+    drawRectangle(129, 62, 2, 3, BLACK);
+    drawRectangle(131, 61, 2, 2, BLACK);
+    drawRectangle(133, 60, 2, 2, BLACK);
+    drawRectangle(135, 59, 3, 3, BLACK);
+    drawRectangle(137, 62, 1, 3, BLACK);
+    drawRectangle(135, 65, 2, 1, BLACK);
+    drawRectangle(133, 62, 4, 3, DARK_GREEN);
+    drawRectangle(133, 65, 2, 1, DARK_GREEN);
+    drawRectangle(131, 63, 2, 6, DARK_GREEN);
+    drawRectangle(129, 65, 2, 2, DARK_GREEN);
+    drawRectangle(126, 67, 5, 2, DARK_GREEN);
+    drawRectangle(127, 69, 4, 1, DARK_GREEN);
+    drawRectangle(120, 72, 2, 7, BLACK);
+    drawRectangle(129, 79, 2, 3, BLACK);
+    drawRectangle(128, 82, 2, 2, BLACK);
+    drawRectangle(127, 83, 3, 5, BLACK);
+    drawRectangle(128, 88, 3, 1, BLACK);
+    drawRectangle(125, 85, 2, 2, BLACK);
+    drawRectangle(112, 83, 13, 3, BLACK);
+    drawRectangle(118, 86, 2, 2, BLACK);
+    drawRectangle(120, 86, 4, 2, DARK_GREEN);
+    drawRectangle(124, 86, 1, 3, BLACK);
+    drawRectangle(117, 87, 1, 2, BLACK);
+    drawRectangle(118, 88, 6, 1, DARK_GREEN);
+    drawRectangle(101, 80, 2, 2, BLACK);
+    drawRectangle(102, 82, 2, 2, BLACK);
+    drawRectangle(104, 83, 1, 3, BLACK);
+    drawRectangle(105, 85, 1, 2, BLACK);
+    drawRectangle(106, 86, 2, 3, BLACK);
+    drawRectangle(109, 85, 3, 2, BLACK);
+    drawRectangle(109, 82, 2, 3, TAN);
+    drawRectangle(108, 82, 1, 4, TAN);
+    drawRectangle(106, 81, 2, 5, TAN);
+    drawRectangle(103, 80, 3, 2, TAN);
+    drawRectangle(104, 82, 2, 1, TAN);
+    drawRectangle(105, 83, 1, 2, TAN);
+    drawRectangle(110, 63, 2, 2, TAN);
+    drawRectangle(111, 68, 2, 2, TAN);
+    drawRectangle(116, 66, 2, 2, TAN);
+    drawRectangle(119, 73, 2, 2, TAN);
+    drawRectangle(111, 79, 2, 2, TAN);
+    drawRectangle(108, 87, 2, 2, TAN);
+
+
+
+
+}
+void topMid3() {
+    drawRectangle(108, 62, 2, 2, BLACK);
+    drawRectangle(100, 64, 9, 3, BLACK);
+    drawRectangle(106, 67, 1, 3, BLACK);
+    drawRectangle(103, 67, 3, 3, DARK_GREEN);
+    drawRectangle(100, 67, 3, 4, BLACK);
+    drawRectangle(103, 70, 3, 3, BLACK);
+    drawRectangle(104, 73, 1, 9, BLACK); 
+    drawRectangle(99, 83, 11, 3, BLACK);
+    drawRectangle(110, 83, 5, 2, BLACK);
+    drawRectangle(105, 80, 14, 3, BLACK);
+    drawRectangle(110, 85, 5, 1, DARK_GREEN);
+    drawRectangle(115, 83, 6, 3, DARK_GREEN);
+    drawRectangle(119, 80, 2, 2, DARK_GREEN);
+    drawRectangle(118, 77, 5, 3, BLACK);
+    drawRectangle(105, 72, 3, 8, TAN);
+    drawRectangle(108, 74, 2, 6, TAN);
+    drawRectangle(110, 76, 2, 4, TAN);
+    drawRectangle(112, 78, 2, 2, TAN);
+    drawRectangle(114, 79, 4, 1, TAN);
+    drawRectangle(114, 71, 2, 2, TAN);
+    drawRectangle(110, 66, 2, 2, TAN);
+    drawRectangle(114, 63, 2, 2, TAN);
+    drawRectangle(125, 62, 2, 2, TAN);
+    drawRectangle(120, 66, 6, 2, BLACK);
+    drawRectangle(121, 68, 11, 3, DARK_GREEN);
+    drawRectangle(134, 66, 2, 2, BLACK);
+    drawRectangle(132, 68, 5, 3, BLACK);
+    drawRectangle(120, 68, 1, 5, BLACK);
+    drawRectangle(121, 71, 7, 2, DARK_GREEN);
+    drawRectangle(121, 73, 6, 3, BLACK);
+    drawRectangle(127, 73, 5, 1, BLACK);
+    drawRectangle(128, 71, 9, 2, BLACK);
+    drawRectangle(132, 73, 4, 8, TAN);
+    drawRectangle(127, 75, 5, 11, TAN);
+    drawRectangle(123, 78, 4, 8, TAN);
+    drawRectangle(121, 80, 2, 6, BLACK);
+    drawRectangle(136, 73, 1, 9, BLACK);
+    drawRectangle(133, 81, 3, 5, BLACK);
+    drawRectangle(132, 81, 1, 5, BLACK);
+
+
+}
+void music() {
+    drawRectangle(80, 21, 2, 15, BLACK);
+    drawRectangle(82, 23, 2, 3, BLACK);
+    drawRectangle(84, 24, 2, 2, BLACK);
+    drawRectangle(86, 23, 3, 3, BLACK);
+    drawRectangle(76, 32, 4, 8, BLACK);
+    drawRectangle(74, 34, 2, 6, BLACK);
+    setPixel(75, 33, BLACK);
+    setPixel(79, 31, BLACK);
+    drawRectangle(80, 36, 1, 3, BLACK);
+    drawRectangle(119, 13, 2, 14, BLACK);
+    drawRectangle(127, 25, 2, 2, BLACK);
+    drawRectangle(129, 23, 2, 3, BLACK);
+    drawRectangle(130, 21, 3, 2, BLACK);
+    drawRectangle(132, 19, 3, 2, BLACK);
+    drawRectangle(135, 17, 3, 3, BLACK);
+    drawRectangle(136, 15, 3, 2, BLACK);
+    drawRectangle(139, 10, 2, 3, BLACK);
+    drawRectangle(133, 31, 5, 1, BLACK);
+    drawRectangle(133, 30, 7, 1, BLACK);
+    drawRectangle(137, 29, 2, 1, BLACK);
+    drawRectangle(139, 28, 5, 2, BLACK);
+
+}
+
+void clearScreen() {
+    drawRectangle(86, 15, 75, 75, BG_COLOR);
+}
+
+void frame1() {
+    head1();
+    topMid1();
+}
+
+void clearFrame1() {
+    drawRectangle(134, 19, 3, 2, BG_COLOR);
+    drawRectangle(133, 20, 1, 2, BG_COLOR);
+    drawRectangle(132, 21, 1, 2, BG_COLOR);
+    drawRectangle(131, 22, 1, 2, BG_COLOR);
+    drawRectangle(130, 23, 1, 2, BG_COLOR);
+    setPixel(129, 24, BG_COLOR);
+    drawRectangle(128, 25, 2, 3, BG_COLOR);
+    setPixel(127, 27, BG_COLOR);
+    setPixel(128, 28, BG_COLOR);
+    drawRectangle(126, 28, 2, 2, BG_COLOR);
+    drawRectangle(136, 21, 1, 4, BG_COLOR);
+    drawRectangle(134, 21, 2, 5, BG_COLOR);
+    drawRectangle(126, 30, 1, 3, BG_COLOR);
+    drawRectangle(127, 32, 5, 2, BG_COLOR);
+    drawRectangle(127, 30, 6, 2, BG_COLOR);
+    drawRectangle(130, 25, 3, 5, BG_COLOR);
+    drawRectangle(133, 22, 1, 7, BG_COLOR);
+    setPixel(134, 26, BG_COLOR);
+    setPixel(131, 24, BG_COLOR);
+    setPixel(128, 29, BG_COLOR);
+    drawRectangle(132, 23, 1, 2, BG_COLOR);
+    drawRectangle(129, 28, 1, 2, BG_COLOR);
+    drawRectangle(116, 30, 10, 2, BG_COLOR);
+    drawRectangle(135, 26, 1, 2, BG_COLOR);
+    drawRectangle(134, 27, 1, 4, BG_COLOR);
+    drawRectangle(133, 29, 1, 6, BG_COLOR);
+    drawRectangle(134, 33, 1, 2, BG_COLOR);
+    setPixel(135, 34, BG_COLOR);
+    drawRectangle(132, 32, 1, 4, BG_COLOR);
+    drawRectangle(126, 34, 6, 2, BG_COLOR);
+    drawRectangle(125, 32, 1, 3, BG_COLOR);
+    setPixel(126, 33, BG_COLOR);
+    drawRectangle(116, 32, 6, 1, BG_COLOR);
+    drawRectangle(113, 33, 5, 2, BG_COLOR);
+    drawRectangle(111, 35, 5, 4, BG_COLOR);
+    drawRectangle(111, 40, 7, 1, BG_COLOR);
+    drawRectangle(107, 41, 5, 1, BG_COLOR);
+    drawRectangle(105, 42, 4, 1, BG_COLOR);
+    drawRectangle(105, 43, 2, 3, BG_COLOR);
+    drawRectangle(107, 45, 9, 1, BG_COLOR);
+    drawRectangle(111, 44, 7, 1, BG_COLOR);
+    drawRectangle(116, 41, 2, 3, BG_COLOR);
+    drawRectangle(110, 46, 3, 7, BG_COLOR);
+    drawRectangle(112, 53, 4, 3, BG_COLOR);
+    drawRectangle(113, 49, 3, 4, BG_COLOR);
+    drawRectangle(113, 54, 3, 2, BG_COLOR);
+    drawRectangle(125, 38, 5, 2, BG_COLOR);
+    drawRectangle(125, 40, 2, 11, BG_COLOR);
+    drawRectangle(127, 40, 4, 11, BG_COLOR);
+    drawRectangle(127, 40, 2, 7, BG_COLOR);
+    drawRectangle(132, 40, 5, 10, BG_COLOR);
+    drawRectangle(134, 41, 2, 6, BG_COLOR);
+    drawRectangle(112, 41, 4, 3, BG_COLOR);
+    drawRectangle(109, 42, 3, 2, BG_COLOR);
+    drawRectangle(107, 43, 2, 1, BG_COLOR);
+    drawRectangle(107, 44, 4, 1, BG_COLOR);
+    drawRectangle(119, 51, 3, 4, BG_COLOR);
+    drawRectangle(122, 53, 4, 2, BG_COLOR);
+    drawRectangle(126, 52, 7, 4, BG_COLOR);
+    drawRectangle(139, 43, 1, 13, BG_COLOR);
+    drawRectangle(136, 53, 3, 3, BG_COLOR);
+    drawRectangle(140, 47, 6, 6, BG_COLOR);
+    drawRectangle(140, 48, 5, 3, BG_COLOR);
+    drawRectangle(116, 55, 6, 1, BG_COLOR);
+    drawRectangle(122, 56, 3, 2, BG_COLOR);
+    drawRectangle(128, 56, 5, 2, BG_COLOR);
+    drawRectangle(125, 57, 3, 1, BG_COLOR);
+    drawRectangle(114, 56, 8, 4, BG_COLOR);
+    drawRectangle(122, 58, 10, 3, BG_COLOR);
+    drawRectangle(133, 55, 3, 4, BG_COLOR);
+    drawRectangle(113, 46, 3, 3, BG_COLOR);
+    drawRectangle(116, 52, 3, 3, BG_COLOR);
+    drawRectangle(120, 48, 2, 2, BG_COLOR);
+    drawRectangle(121, 39, 2, 2, BG_COLOR);
+    drawRectangle(131, 37, 2, 2, BG_COLOR);
+
+    drawRectangle(106, 60, 20, 3, BG_COLOR);
+    drawRectangle(123, 63, 3, 1, BG_COLOR);
+    drawRectangle(126, 62, 1, 3, BG_COLOR);
+    drawRectangle(104, 63, 5, 2, BG_COLOR);
+    drawRectangle(103, 65, 2, 2, BG_COLOR);
+    drawRectangle(101, 66, 3, 5, BG_COLOR);
+    drawRectangle(100, 71, 2, 8, BG_COLOR);
+    drawRectangle(101, 79, 2, 3, BG_COLOR);
+    drawRectangle(102, 82, 3, 2, BG_COLOR);
+    drawRectangle(103, 84, 3, 2, BG_COLOR);
+    drawRectangle(105, 86, 4, 2, BG_COLOR);
+    drawRectangle(107, 88, 4, 2, BG_COLOR);
+    drawRectangle(111, 89, 11, 2, BG_COLOR);
+    drawRectangle(122, 88, 2, 2, BG_COLOR);
+    drawRectangle(123, 86, 3, 3, BG_COLOR);
+    drawRectangle(126, 85, 3, 3, BG_COLOR);
+    drawRectangle(127, 82, 3, 3, BG_COLOR);
+    drawRectangle(129, 80, 2, 2, BG_COLOR);
+    drawRectangle(111, 67, 8, 2, BG_COLOR);
+    drawRectangle(111, 69, 3, 2, BG_COLOR);
+    drawRectangle(118, 69, 2, 7, BG_COLOR);
+    drawRectangle(108, 70, 3, 3, BG_COLOR);
+    drawRectangle(108, 73, 1, 3, BG_COLOR);
+    drawRectangle(109, 75, 9, 1, BG_COLOR);
+    drawRectangle(114, 69, 4, 6, BG_COLOR);
+    drawRectangle(111, 71, 3, 4, BG_COLOR);
+    drawRectangle(109, 73, 2, 2, BG_COLOR);
+    drawRectangle(109, 63, 2, 2, BG_COLOR);
+    drawRectangle(106, 65, 3, 2, BG_COLOR);
+    drawRectangle(104, 67, 4, 4, BG_COLOR);
+    drawRectangle(102, 71, 6, 8, BG_COLOR);
+    drawRectangle(103, 79, 6, 3, BG_COLOR);
+    drawRectangle(105, 82, 6, 2, BG_COLOR);
+    drawRectangle(106, 84, 6, 2, BG_COLOR);
+    drawRectangle(112, 85, 5, 1, BG_COLOR);
+    drawRectangle(109, 86, 14, 2, BG_COLOR);
+    drawRectangle(111, 88, 10, 1, BG_COLOR);
+    drawRectangle(122, 84, 4, 2, BG_COLOR);
+    drawRectangle(114, 81, 2, 2, BG_COLOR);
+    drawRectangle(123, 77, 2, 2, BG_COLOR);
+    drawRectangle(122, 66, 2, 2, BG_COLOR);
+}
+
+void frame2() {
+    head2();
+    topMid2();
+}
+
+void clearFrame2() {
+    drawRectangle(111, 16, 2, 18, BG_COLOR);
+    drawRectangle(113, 16, 3, 5, BG_COLOR);
+    drawRectangle(116, 19, 1, 3, BG_COLOR);
+    drawRectangle(113, 21, 3, 12, BG_COLOR);
+    drawRectangle(116, 22, 1, 11, BG_COLOR);
+    drawRectangle(117, 25, 2, 8, BG_COLOR);
+    setPixel(117, 24, BG_COLOR);
+    drawRectangle(119, 27, 1, 2, BG_COLOR);
+    drawRectangle(119, 29, 2, 4, BG_COLOR);
+    drawRectangle(117, 21, 1, 3, BG_COLOR);
+    drawRectangle(118, 22, 1, 3, BG_COLOR);
+    drawRectangle(119, 24, 1, 3, BG_COLOR);
+    drawRectangle(120, 25, 1, 3, BG_COLOR);
+    drawRectangle(121, 26, 1, 7, BG_COLOR);
+    drawRectangle(122, 28, 1, 5, BG_COLOR);
+    drawRectangle(123, 29, 1, 4, BG_COLOR);
+    setPixel(124, 31, BG_COLOR);
+    drawRectangle(124, 32, 2, 1, BG_COLOR);
+    drawRectangle(102, 33, 24, 2, BG_COLOR);
+    drawRectangle(107, 30, 4, 3, BG_COLOR);
+    drawRectangle(102, 35, 2, 20, BG_COLOR);
+    drawRectangle(104, 35, 3, 3, BG_COLOR);
+    drawRectangle(93, 41, 9, 7, BG_COLOR);
+    drawRectangle(94, 43, 7, 4, BG_COLOR);
+    drawRectangle(91, 42, 2, 6, BG_COLOR);
+    drawRectangle(87, 43, 4, 2, BG_COLOR);
+    drawRectangle(108, 59, 20, 2, BG_COLOR);
+    drawRectangle(104, 51, 3, 7, BG_COLOR);
+    drawRectangle(107, 55, 6, 4, BG_COLOR);
+    drawRectangle(113, 58, 7, 1, BG_COLOR);
+    drawRectangle(120, 57, 3, 2, BG_COLOR);
+    drawRectangle(123, 54, 5, 5, BG_COLOR);
+    drawRectangle(128, 48, 3, 7, BG_COLOR);
+    drawRectangle(129, 38, 2, 1, BG_COLOR);
+    drawRectangle(129, 39, 7, 1, BG_COLOR);
+    drawRectangle(139, 40, 8, 4, BG_COLOR);
+    drawRectangle(130, 44, 5, 1, BG_COLOR);
+    drawRectangle(130, 45, 2, 3, BG_COLOR);
+    drawRectangle(132, 45, 3, 2, BG_COLOR);
+    drawRectangle(135, 44, 4, 2, BG_COLOR);
+    drawRectangle(138, 40, 2, 4, BG_COLOR);
+    drawRectangle(104, 46, 3, 6, BG_COLOR);
+    setPixel(107, 51, BG_COLOR);
+    drawRectangle(107, 52, 3, 3, BG_COLOR);
+    drawRectangle(110, 53, 3, 2, BG_COLOR);
+    drawRectangle(113, 53, 7, 5, BG_COLOR);
+    drawRectangle(120, 53, 3, 4, BG_COLOR);
+    setPixel(122, 52, BG_COLOR);
+    drawRectangle(123, 52, 5, 2, BG_COLOR);
+    setPixel(124, 51, BG_COLOR);
+    drawRectangle(125, 48, 3, 4, BG_COLOR);
+    setPixel(127, 47, BG_COLOR);
+    drawRectangle(128, 46, 2, 2, BG_COLOR);
+    drawRectangle(107, 49, 3, 2, BG_COLOR);
+    drawRectangle(110, 50, 2, 3, BG_COLOR);
+    drawRectangle(108, 51, 2, 1, BG_COLOR);
+    drawRectangle(112, 51, 10, 2, BG_COLOR);
+    drawRectangle(120, 50, 5, 1, BG_COLOR);
+    drawRectangle(122, 51, 2, 1, BG_COLOR);
+    drawRectangle(123, 49, 2, 1, BG_COLOR);
+    drawRectangle(124, 39, 2, 9, BG_COLOR);
+    drawRectangle(120, 37, 4, 12, BG_COLOR);
+    drawRectangle(120, 39, 4, 7, BG_COLOR);
+    drawRectangle(119, 38, 1, 10, BG_COLOR);
+    drawRectangle(110, 39, 2, 10, BG_COLOR);
+    drawRectangle(112, 37, 3, 12, BG_COLOR);
+    drawRectangle(112, 39, 2, 7, BG_COLOR);
+    drawRectangle(114, 41, 1, 4, BG_COLOR);
+    drawRectangle(115, 39, 2, 9, BG_COLOR);
+    drawRectangle(106, 41, 2, 2, BG_COLOR);
+
+    drawRectangle(106, 61, 6, 2, BG_COLOR);
+    drawRectangle(105, 63, 2, 2, BG_COLOR);
+    drawRectangle(103, 64, 2, 2, BG_COLOR);
+    drawRectangle(102, 66, 2, 2, BG_COLOR);
+    drawRectangle(101, 68, 2, 1, BG_COLOR);
+    drawRectangle(97, 69, 9, 3, BG_COLOR);
+    drawRectangle(106, 71, 1, 8, BG_COLOR);
+    drawRectangle(94, 71, 3, 2, BG_COLOR);
+    drawRectangle(91, 72, 3, 2, BG_COLOR);
+    drawRectangle(90, 73, 1, 3, BG_COLOR);
+    drawRectangle(91, 76, 7, 1, BG_COLOR);
+    drawRectangle(98, 77, 3, 1, BG_COLOR);
+    drawRectangle(101, 77, 5, 3, BG_COLOR);
+    drawRectangle(98, 72, 8, 5, BG_COLOR);
+    drawRectangle(97, 72, 1, 4, BG_COLOR);
+    drawRectangle(94, 73, 3, 3, BG_COLOR);
+    drawRectangle(91, 74, 3, 2, BG_COLOR);
+    drawRectangle(124, 63, 5, 4, BG_COLOR);
+    drawRectangle(124, 67, 2, 3, BG_COLOR);
+    setPixel(126, 69, BG_COLOR);
+    setPixel(125, 70, BG_COLOR);
+    drawRectangle(126, 70, 6, 2, BG_COLOR);
+    drawRectangle(131, 68, 2, 2, BG_COLOR);
+    drawRectangle(133, 66, 2, 2, BG_COLOR);
+    drawRectangle(129, 62, 2, 3, BG_COLOR);
+    drawRectangle(131, 61, 2, 2, BG_COLOR);
+    drawRectangle(133, 60, 2, 2, BG_COLOR);
+    drawRectangle(135, 59, 3, 3, BG_COLOR);
+    drawRectangle(137, 62, 1, 3, BG_COLOR);
+    drawRectangle(135, 65, 2, 1, BG_COLOR);
+    drawRectangle(133, 62, 4, 3, BG_COLOR);
+    drawRectangle(133, 65, 2, 1, BG_COLOR);
+    drawRectangle(131, 63, 2, 6, BG_COLOR);
+    drawRectangle(129, 65, 2, 2, BG_COLOR);
+    drawRectangle(126, 67, 5, 2, BG_COLOR);
+    drawRectangle(127, 69, 4, 1, BG_COLOR);
+    drawRectangle(120, 72, 2, 7, BG_COLOR);
+    drawRectangle(129, 79, 2, 3, BG_COLOR);
+    drawRectangle(128, 82, 2, 2, BG_COLOR);
+    drawRectangle(127, 83, 3, 5, BG_COLOR);
+    drawRectangle(128, 88, 3, 1, BG_COLOR);
+    drawRectangle(125, 85, 2, 2, BG_COLOR);
+    drawRectangle(112, 83, 13, 3, BG_COLOR);
+    drawRectangle(118, 86, 2, 2, BG_COLOR);
+    drawRectangle(120, 86, 4, 2, BG_COLOR);
+    drawRectangle(124, 86, 1, 3, BG_COLOR);
+    drawRectangle(117, 87, 1, 2, BG_COLOR);
+    drawRectangle(118, 88, 6, 1, BG_COLOR);
+    drawRectangle(101, 80, 2, 2, BG_COLOR);
+    drawRectangle(102, 82, 2, 2, BG_COLOR);
+    drawRectangle(104, 83, 1, 3, BG_COLOR);
+    drawRectangle(105, 85, 1, 2, BG_COLOR);
+    drawRectangle(106, 86, 2, 3, BG_COLOR);
+    drawRectangle(109, 85, 3, 2, BG_COLOR);
+    drawRectangle(109, 82, 2, 3, BG_COLOR);
+    drawRectangle(108, 82, 1, 4, BG_COLOR);
+    drawRectangle(106, 81, 2, 5, BG_COLOR);
+    drawRectangle(103, 80, 3, 2, BG_COLOR);
+    drawRectangle(104, 82, 2, 1, BG_COLOR);
+    drawRectangle(105, 83, 1, 2, BG_COLOR);
+    drawRectangle(110, 63, 2, 2, BG_COLOR);
+    drawRectangle(111, 68, 2, 2, BG_COLOR);
+    drawRectangle(116, 66, 2, 2, BG_COLOR);
+    drawRectangle(119, 73, 2, 2, BG_COLOR);
+    drawRectangle(111, 79, 2, 2, BG_COLOR);
+    drawRectangle(108, 87, 2, 2, BG_COLOR);
+}
+
+void frame3() {
+    head3();
+    topMid3();
+}
+
+void clearFrame3() {
+    drawRectangle(98, 30, 1, 8, BG_COLOR);
+    drawRectangle(98, 38, 7, 2, BG_COLOR);
+    drawRectangle(99, 28, 1, 10, BG_COLOR);
+    drawRectangle(100, 27, 3, 11, BG_COLOR);
+    drawRectangle(100, 25, 3, 2, BG_COLOR);
+    drawRectangle(103, 26, 1, 2, BG_COLOR);
+    drawRectangle(103, 28, 2, 10, BG_COLOR);
+    drawRectangle(105, 32, 3, 2, BG_COLOR);
+    drawRectangle(95, 35, 3, 4, BG_COLOR);
+    drawRectangle(92, 37, 3, 3, BG_COLOR);
+    drawRectangle(91, 40, 4, 1, BG_COLOR);
+    drawRectangle(91, 41, 7, 3, BG_COLOR);
+    drawRectangle(97, 44, 1, 9, BG_COLOR);
+    drawRectangle(87, 44, 7, 6, BG_COLOR);
+    drawRectangle(89, 46, 2, 2, BG_COLOR);
+    drawRectangle(94, 44, 3, 5, BG_COLOR);
+    drawRectangle(94, 49, 3, 4, BG_COLOR);
+    drawRectangle(92, 50, 2, 3, BG_COLOR);
+    drawRectangle(92, 53, 3, 3, BG_COLOR);
+    drawRectangle(93, 56, 4, 3, BG_COLOR);
+    drawRectangle(100, 41, 7, 11, BG_COLOR);
+    drawRectangle(101, 43, 3, 8, BG_COLOR);
+    drawRectangle(111, 43, 12, 7, BG_COLOR);
+    drawRectangle(112, 45, 7, 2, BG_COLOR);
+    drawRectangle(97, 54, 13, 2, BG_COLOR);
+    drawRectangle(107, 52, 3, 2, BG_COLOR);
+    drawRectangle(97, 58, 6, 4, BG_COLOR);
+    drawRectangle(103, 60, 10, 2, BG_COLOR);
+    drawRectangle(110, 58, 8, 2, BG_COLOR);
+    setPixel(118, 40, BG_COLOR);
+    drawRectangle(119, 41, 2, 2, BG_COLOR);
+    drawRectangle(117, 41, 2, 1, BG_COLOR);
+    drawRectangle(112, 42, 7, 1, BG_COLOR);
+    drawRectangle(109, 38, 2, 2, BG_COLOR);
+    drawRectangle(120, 50, 2, 2, BG_COLOR);
+    drawRectangle(118, 52, 3, 3, BG_COLOR);
+    drawRectangle(118, 55, 3, 4, BG_COLOR);
+    drawRectangle(116, 55, 2, 3, BG_COLOR);
+    drawRectangle(97, 57, 6, 1, BG_COLOR);
+    drawRectangle(103, 57, 2, 3, BG_COLOR);
+    drawRectangle(105, 56, 5, 4, BG_COLOR);
+    drawRectangle(110, 54, 1, 4, BG_COLOR);
+    drawRectangle(111, 52, 1, 6, BG_COLOR);
+    drawRectangle(112, 51, 1, 7, BG_COLOR);
+    drawRectangle(113, 55, 3, 3, BG_COLOR);
+    drawRectangle(113, 50, 5, 5, BG_COLOR);
+    drawRectangle(118, 50, 1, 2, BG_COLOR);
+    setPixel(119, 51, BG_COLOR);
+
+    drawRectangle(108, 62, 2, 2, BG_COLOR);
+    drawRectangle(100, 64, 9, 3, BG_COLOR);
+    drawRectangle(106, 67, 1, 3, BG_COLOR);
+    drawRectangle(103, 67, 3, 3, BG_COLOR);
+    drawRectangle(100, 67, 3, 4, BG_COLOR);
+    drawRectangle(103, 70, 3, 3, BG_COLOR);
+    drawRectangle(104, 73, 1, 9, BG_COLOR); 
+    drawRectangle(99, 83, 11, 3, BG_COLOR);
+    drawRectangle(110, 83, 5, 2, BG_COLOR);
+    drawRectangle(105, 80, 14, 3, BG_COLOR);
+    drawRectangle(110, 85, 5, 1, BG_COLOR);
+    drawRectangle(115, 83, 6, 3, BG_COLOR);
+    drawRectangle(119, 80, 2, 2, BG_COLOR);
+    drawRectangle(118, 77, 5, 3, BG_COLOR);
+    drawRectangle(105, 72, 3, 8, BG_COLOR);
+    drawRectangle(108, 74, 2, 6, BG_COLOR);
+    drawRectangle(110, 76, 2, 4, BG_COLOR);
+    drawRectangle(112, 78, 2, 2, BG_COLOR);
+    drawRectangle(114, 79, 4, 1, BG_COLOR);
+    drawRectangle(114, 71, 2, 2, BG_COLOR);
+    drawRectangle(110, 66, 2, 2, BG_COLOR);
+    drawRectangle(114, 63, 2, 2, BG_COLOR);
+    drawRectangle(125, 62, 2, 2, BG_COLOR);
+    drawRectangle(120, 66, 6, 2, BG_COLOR);
+    drawRectangle(121, 68, 11, 3, BG_COLOR);
+    drawRectangle(134, 66, 2, 2, BG_COLOR);
+    drawRectangle(132, 68, 5, 3, BG_COLOR);
+    drawRectangle(120, 68, 1, 5, BG_COLOR);
+    drawRectangle(121, 71, 7, 2, BG_COLOR);
+    drawRectangle(121, 73, 6, 3, BG_COLOR);
+    drawRectangle(127, 73, 5, 1, BG_COLOR);
+    drawRectangle(128, 71, 9, 2, BG_COLOR);
+    drawRectangle(132, 73, 4, 8, BG_COLOR);
+    drawRectangle(127, 75, 5, 11, BG_COLOR);
+    drawRectangle(123, 78, 4, 8, BG_COLOR);
+    drawRectangle(121, 80, 2, 6, BG_COLOR);
+    drawRectangle(136, 73, 1, 9, BG_COLOR);
+    drawRectangle(133, 81, 3, 5, BG_COLOR);
+    drawRectangle(132, 81, 1, 5, BG_COLOR);
+}
+
+void frame4() {
+    head4();
+    topMid3();
+}
+
+void clearFrame4() {
+    drawRectangle(98, 30, 1, 8, BG_COLOR);
+    drawRectangle(98, 38, 7, 2, BG_COLOR);
+    drawRectangle(99, 28, 1, 10, BG_COLOR);
+    drawRectangle(100, 27, 3, 11, BG_COLOR);
+    drawRectangle(100, 25, 3, 2, BG_COLOR);
+    drawRectangle(103, 26, 1, 2, BG_COLOR);
+    drawRectangle(103, 28, 2, 10, BG_COLOR);
+    drawRectangle(105, 32, 3, 2, BG_COLOR);
+    drawRectangle(95, 35, 3, 4, BG_COLOR);
+    drawRectangle(92, 37, 3, 3, BG_COLOR);
+    drawRectangle(91, 40, 4, 1, BG_COLOR);
+    drawRectangle(91, 41, 7, 3, BG_COLOR);
+    drawRectangle(97, 44, 1, 9, BG_COLOR);
+    drawRectangle(87, 44, 7, 6, BG_COLOR);
+    drawRectangle(89, 46, 2, 2, BG_COLOR);
+    drawRectangle(94, 44, 3, 5, BG_COLOR);
+    drawRectangle(94, 49, 3, 4, BG_COLOR);
+    drawRectangle(92, 50, 2, 3, BG_COLOR);
+    drawRectangle(92, 53, 3, 3, BG_COLOR);
+    drawRectangle(93, 56, 4, 3, BG_COLOR);
+    drawRectangle(100, 41, 7, 11, BG_COLOR);
+    drawRectangle(101, 43, 3, 8, BG_COLOR);
+    drawRectangle(111, 43, 12, 7, BG_COLOR);
+    drawRectangle(112, 45, 7, 2, BG_COLOR);
+    drawRectangle(97, 54, 13, 2, BG_COLOR);
+    drawRectangle(107, 52, 3, 2, BG_COLOR);
+    drawRectangle(97, 58, 6, 4, BG_COLOR);
+    drawRectangle(103, 60, 10, 2, BG_COLOR);
+    drawRectangle(110, 58, 8, 2, BG_COLOR);
+    setPixel(118, 40, BG_COLOR);
+    drawRectangle(119, 41, 2, 2, BG_COLOR);
+    drawRectangle(117, 41, 2, 1, BG_COLOR);
+    drawRectangle(112, 42, 7, 1, BG_COLOR);
+    drawRectangle(109, 38, 2, 2, BG_COLOR);
+    drawRectangle(120, 50, 2, 2, BG_COLOR);
+    drawRectangle(118, 52, 3, 3, BG_COLOR);
+    drawRectangle(118, 55, 3, 4, BG_COLOR);
+    drawRectangle(116, 55, 2, 3, BG_COLOR);
+    drawRectangle(97, 57, 6, 1, BG_COLOR);
+    drawRectangle(103, 57, 2, 3, BG_COLOR);
+    drawRectangle(105, 56, 5, 4, BG_COLOR);
+    drawRectangle(110, 54, 1, 4, BG_COLOR);
+    drawRectangle(111, 52, 1, 6, BG_COLOR);
+    drawRectangle(112, 51, 1, 7, BG_COLOR);
+    drawRectangle(113, 55, 3, 3, BG_COLOR);
+    drawRectangle(113, 50, 5, 5, BG_COLOR);
+    drawRectangle(118, 50, 1, 2, BG_COLOR);
+    setPixel(119, 51, BG_COLOR);
+    drawRectangle(99, 56, 10, 1, BG_COLOR);
+    drawRectangle(104, 57, 4, 1, BG_COLOR);
+
+    drawRectangle(108, 62, 2, 2, BG_COLOR);
+    drawRectangle(100, 64, 9, 3, BG_COLOR);
+    drawRectangle(106, 67, 1, 3, BG_COLOR);
+    drawRectangle(103, 67, 3, 3, BG_COLOR);
+    drawRectangle(100, 67, 3, 4, BG_COLOR);
+    drawRectangle(103, 70, 3, 3, BG_COLOR);
+    drawRectangle(104, 73, 1, 9, BG_COLOR); 
+    drawRectangle(99, 83, 11, 3, BG_COLOR);
+    drawRectangle(110, 83, 5, 2, BG_COLOR);
+    drawRectangle(105, 80, 14, 3, BG_COLOR);
+    drawRectangle(110, 85, 5, 1, BG_COLOR);
+    drawRectangle(115, 83, 6, 3, BG_COLOR);
+    drawRectangle(119, 80, 2, 2, BG_COLOR);
+    drawRectangle(118, 77, 5, 3, BG_COLOR);
+    drawRectangle(105, 72, 3, 8, BG_COLOR);
+    drawRectangle(108, 74, 2, 6, BG_COLOR);
+    drawRectangle(110, 76, 2, 4, BG_COLOR);
+    drawRectangle(112, 78, 2, 2, BG_COLOR);
+    drawRectangle(114, 79, 4, 1, BG_COLOR);
+    drawRectangle(114, 71, 2, 2, BG_COLOR);
+    drawRectangle(110, 66, 2, 2, BG_COLOR);
+    drawRectangle(114, 63, 2, 2, BG_COLOR);
+    drawRectangle(125, 62, 2, 2, BG_COLOR);
+    drawRectangle(120, 66, 6, 2, BG_COLOR);
+    drawRectangle(121, 68, 11, 3, BG_COLOR);
+    drawRectangle(134, 66, 2, 2, BG_COLOR);
+    drawRectangle(132, 68, 5, 3, BG_COLOR);
+    drawRectangle(120, 68, 1, 5, BG_COLOR);
+    drawRectangle(121, 71, 7, 2, BG_COLOR);
+    drawRectangle(121, 73, 6, 3, BG_COLOR);
+    drawRectangle(127, 73, 5, 1, BG_COLOR);
+    drawRectangle(128, 71, 9, 2, BG_COLOR);
+    drawRectangle(132, 73, 4, 8, BG_COLOR);
+    drawRectangle(127, 75, 5, 11, BG_COLOR);
+    drawRectangle(123, 78, 4, 8, BG_COLOR);
+    drawRectangle(121, 80, 2, 6, BG_COLOR);
+    drawRectangle(136, 73, 1, 9, BG_COLOR);
+    drawRectangle(133, 81, 3, 5, BG_COLOR);
+    drawRectangle(132, 81, 1, 5, BG_COLOR);
+}
+
+void frame5() {
+    head4();
+    topMid3();
+    music();
+}
+
+void clearFrame5() {
+    drawRectangle(98, 30, 1, 8, BG_COLOR);
+    drawRectangle(98, 38, 7, 2, BG_COLOR);
+    drawRectangle(99, 28, 1, 10, BG_COLOR);
+    drawRectangle(100, 27, 3, 11, BG_COLOR);
+    drawRectangle(100, 25, 3, 2, BG_COLOR);
+    drawRectangle(103, 26, 1, 2, BG_COLOR);
+    drawRectangle(103, 28, 2, 10, BG_COLOR);
+    drawRectangle(105, 32, 3, 2, BG_COLOR);
+    drawRectangle(95, 35, 3, 4, BG_COLOR);
+    drawRectangle(92, 37, 3, 3, BG_COLOR);
+    drawRectangle(91, 40, 4, 1, BG_COLOR);
+    drawRectangle(91, 41, 7, 3, BG_COLOR);
+    drawRectangle(97, 44, 1, 9, BG_COLOR);
+    drawRectangle(87, 44, 7, 6, BG_COLOR);
+    drawRectangle(89, 46, 2, 2, BG_COLOR);
+    drawRectangle(94, 44, 3, 5, BG_COLOR);
+    drawRectangle(94, 49, 3, 4, BG_COLOR);
+    drawRectangle(92, 50, 2, 3, BG_COLOR);
+    drawRectangle(92, 53, 3, 3, BG_COLOR);
+    drawRectangle(93, 56, 4, 3, BG_COLOR);
+    drawRectangle(100, 41, 7, 11, BG_COLOR);
+    drawRectangle(101, 43, 3, 8, BG_COLOR);
+    drawRectangle(111, 43, 12, 7, BG_COLOR);
+    drawRectangle(112, 45, 7, 2, BG_COLOR);
+    drawRectangle(97, 54, 13, 2, BG_COLOR);
+    drawRectangle(107, 52, 3, 2, BG_COLOR);
+    drawRectangle(97, 58, 6, 4, BG_COLOR);
+    drawRectangle(103, 60, 10, 2, BG_COLOR);
+    drawRectangle(110, 58, 8, 2, BG_COLOR);
+    setPixel(118, 40, BG_COLOR);
+    drawRectangle(119, 41, 2, 2, BG_COLOR);
+    drawRectangle(117, 41, 2, 1, BG_COLOR);
+    drawRectangle(112, 42, 7, 1, BG_COLOR);
+    drawRectangle(109, 38, 2, 2, BG_COLOR);
+    drawRectangle(120, 50, 2, 2, BG_COLOR);
+    drawRectangle(118, 52, 3, 3, BG_COLOR);
+    drawRectangle(118, 55, 3, 4, BG_COLOR);
+    drawRectangle(116, 55, 2, 3, BG_COLOR);
+    drawRectangle(97, 57, 6, 1, BG_COLOR);
+    drawRectangle(103, 57, 2, 3, BG_COLOR);
+    drawRectangle(105, 56, 5, 4, BG_COLOR);
+    drawRectangle(110, 54, 1, 4, BG_COLOR);
+    drawRectangle(111, 52, 1, 6, BG_COLOR);
+    drawRectangle(112, 51, 1, 7, BG_COLOR);
+    drawRectangle(113, 55, 3, 3, BG_COLOR);
+    drawRectangle(113, 50, 5, 5, BG_COLOR);
+    drawRectangle(118, 50, 1, 2, BG_COLOR);
+    setPixel(119, 51, BG_COLOR);
+    drawRectangle(99, 56, 10, 1, BG_COLOR);
+    drawRectangle(104, 57, 4, 1, BG_COLOR);
+
+    drawRectangle(108, 62, 2, 2, BG_COLOR);
+    drawRectangle(100, 64, 9, 3, BG_COLOR);
+    drawRectangle(106, 67, 1, 3, BG_COLOR);
+    drawRectangle(103, 67, 3, 3, BG_COLOR);
+    drawRectangle(100, 67, 3, 4, BG_COLOR);
+    drawRectangle(103, 70, 3, 3, BG_COLOR);
+    drawRectangle(104, 73, 1, 9, BG_COLOR); 
+    drawRectangle(99, 83, 11, 3, BG_COLOR);
+    drawRectangle(110, 83, 5, 2, BG_COLOR);
+    drawRectangle(105, 80, 14, 3, BG_COLOR);
+    drawRectangle(110, 85, 5, 1, BG_COLOR);
+    drawRectangle(115, 83, 6, 3, BG_COLOR);
+    drawRectangle(119, 80, 2, 2, BG_COLOR);
+    drawRectangle(118, 77, 5, 3, BG_COLOR);
+    drawRectangle(105, 72, 3, 8, BG_COLOR);
+    drawRectangle(108, 74, 2, 6, BG_COLOR);
+    drawRectangle(110, 76, 2, 4, BG_COLOR);
+    drawRectangle(112, 78, 2, 2, BG_COLOR);
+    drawRectangle(114, 79, 4, 1, BG_COLOR);
+    drawRectangle(114, 71, 2, 2, BG_COLOR);
+    drawRectangle(110, 66, 2, 2, BG_COLOR);
+    drawRectangle(114, 63, 2, 2, BG_COLOR);
+    drawRectangle(125, 62, 2, 2, BG_COLOR);
+    drawRectangle(120, 66, 6, 2, BG_COLOR);
+    drawRectangle(121, 68, 11, 3, BG_COLOR);
+    drawRectangle(134, 66, 2, 2, BG_COLOR);
+    drawRectangle(132, 68, 5, 3, BG_COLOR);
+    drawRectangle(120, 68, 1, 5, BG_COLOR);
+    drawRectangle(121, 71, 7, 2, BG_COLOR);
+    drawRectangle(121, 73, 6, 3, BG_COLOR);
+    drawRectangle(127, 73, 5, 1, BG_COLOR);
+    drawRectangle(128, 71, 9, 2, BG_COLOR);
+    drawRectangle(132, 73, 4, 8, BG_COLOR);
+    drawRectangle(127, 75, 5, 11, BG_COLOR);
+    drawRectangle(123, 78, 4, 8, BG_COLOR);
+    drawRectangle(121, 80, 2, 6, BG_COLOR);
+    drawRectangle(136, 73, 1, 9, BG_COLOR);
+    drawRectangle(133, 81, 3, 5, BG_COLOR);
+    drawRectangle(132, 81, 1, 5, BG_COLOR);
+
+    drawRectangle(80, 21, 2, 15, BG_COLOR);
+    drawRectangle(82, 23, 2, 3, BG_COLOR);
+    drawRectangle(84, 24, 2, 2, BG_COLOR);
+    drawRectangle(86, 23, 3, 3, BG_COLOR);
+    drawRectangle(76, 32, 4, 8, BG_COLOR);
+    drawRectangle(74, 34, 2, 6, BG_COLOR);
+    setPixel(75, 33, BG_COLOR);
+    setPixel(79, 31, BG_COLOR);
+    drawRectangle(80, 36, 1, 3, BG_COLOR);
+    drawRectangle(119, 13, 2, 14, BG_COLOR);
+    drawRectangle(127, 25, 2, 2, BG_COLOR);
+    drawRectangle(129, 23, 2, 3, BG_COLOR);
+    drawRectangle(130, 21, 3, 2, BG_COLOR);
+    drawRectangle(132, 19, 3, 2, BG_COLOR);
+    drawRectangle(135, 17, 3, 3, BG_COLOR);
+    drawRectangle(136, 15, 3, 2, BG_COLOR);
+    drawRectangle(139, 10, 2, 3, BG_COLOR);
+    drawRectangle(133, 31, 5, 1, BG_COLOR);
+    drawRectangle(133, 30, 7, 1, BG_COLOR);
+    drawRectangle(137, 29, 2, 1, BG_COLOR);
+    drawRectangle(139, 28, 5, 2, BG_COLOR);
+}
+
+void drawPipe() {
+    drawRectangle(93, 95, 51, 15, GREEN);
+    drawRectangle(105, 110, 31, 40, DARK_GREEN);
+    drawRectangle(98, 110, 14, 40, GREEN);
+    drawRectangle(98, 110, 14, 3, DARK_GREEN);
+}
+
+void waitForVBlank() {
+    while (REG_VCOUNT >= 160);
+    while (REG_VCOUNT < 160);
+}

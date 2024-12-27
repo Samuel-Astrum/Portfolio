@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/topartistbg"
+    tools:context=".ui.wrappedFragments.TopArtistFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Artists"
+            android:layout_gravity="center_vertical"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/top_artist" />
+
+
+            <ImageView
+                android:id="@+id/topArtistImage"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/top_artist"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#1"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/artistImage1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/top_artist" />
+
+            <TextView
+                android:id="@+id/artist1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#2"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/artistImage2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/top_artist"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/artist2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#3"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/artistImage3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/top_artist" />
+
+
+            <TextView
+                android:id="@+id/artist3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#4"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/artistImage4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/top_artist" />
+
+
+            <TextView
+                android:id="@+id/artist4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#5"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/artistImage5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/top_artist" />
+
+
+            <TextView
+                android:id="@+id/artist5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="John Doe"
+                android:layout_gravity="center_vertical"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

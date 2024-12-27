@@ -1,0 +1,157 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "bossTwo.tmx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "Dungeon.tsx": {
+            "scaleInDock": 4,
+            "scaleInEditor": 1
+        },
+        "Map.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "Overworld.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "back.tmx": {
+            "scale": 2.19873046875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 292.2140795025539,
+                "y": 23.195203197868096
+            }
+        },
+        "bossOne.tmx": {
+            "scale": 2.9984374999999996,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 127.23293381969778,
+                "y": 127.06618030224077
+            }
+        },
+        "bossTwo.tmx": {
+            "scale": 3.31015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 133.67949020533393,
+                "y": 122.35071984894974
+            }
+        },
+        "dungeonMAP.tmx": {
+            "scale": 2.9984374999999996,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 126.89942678478376,
+                "y": 127.06618030224077
+            }
+        },
+        "dungeonOne.tmx": {
+            "scale": 3.1283203124999996,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 122.2700880314666,
+                "y": 128.1838047074983
+            }
+        },
+        "dungeonOne.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "dungeonTwo.tmx": {
+            "scale": 3.31015625,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 263.2806230823696,
+                "y": 120.23601604909132
+            }
+        },
+        "front.tmx": {
+            "scale": 2.19873046875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 292.2140795025539,
+                "y": 76.40772818121253
+            }
+        },
+        "parallax.tsx": {
+            "scaleInDock": 3,
+            "scaleInEditor": 1
+        },
+        "tempMAP.tmx": {
+            "scale": 4.797499999999999,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 127.98332464825431,
+                "y": 127.98332464825432
+            }
+        },
+        "untitled.tmx": {
+            "scale": 3,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 187.16666666666663,
+                "y": 93.66666666666667
+            }
+        },
+        "untitled1.tmx": {
+            "scale": 3.1283203124999996,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 128.02397452706498,
+                "y": 128.1838047074983
+            }
+        }
+    },
+    "last.exportedFilePath": "C:/Users/theep/OneDrive/Desktop/CS2261/Final Project",
+    "last.imagePath": "C:/Users/theep/OneDrive/Desktop/CS2261/Final Project/USENTI and TILES",
+    "map.height": 32,
+    "map.lastUsedExportFilter": "GBA source files - regular (*.c *.h)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 8,
+    "map.tileWidth": 8,
+    "map.width": 32,
+    "openFiles": [
+        "Map.tsx",
+        "tempMAP.tmx",
+        "Dungeon.tsx",
+        "dungeonMAP.tmx",
+        "bossOne.tmx",
+        "Overworld.tsx",
+        "untitled.tmx",
+        "dungeonOne.tsx",
+        "dungeonOne.tmx",
+        "untitled1.tmx",
+        "parallax.tsx",
+        "back.tmx",
+        "front.tmx",
+        "dungeonTwo.tmx",
+        "bossTwo.tmx"
+    ],
+    "project": "untitled.tiled-project",
+    "recentFiles": [
+        "Map.tsx",
+        "tempMAP.tmx",
+        "Dungeon.tsx",
+        "dungeonMAP.tmx",
+        "bossOne.tmx",
+        "Overworld.tsx",
+        "untitled.tmx",
+        "dungeonOne.tsx",
+        "dungeonOne.tmx",
+        "untitled1.tmx",
+        "parallax.tsx",
+        "back.tmx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 8,
+        "width": 8
+    }
+}

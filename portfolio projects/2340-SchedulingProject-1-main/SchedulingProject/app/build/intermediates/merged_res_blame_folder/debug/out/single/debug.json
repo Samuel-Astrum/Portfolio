@@ -1,0 +1,210 @@
+[
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_notifications.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_notifications.xml"
+    },
+    {
+        "merged": "com.example.schedulingproject.app-merged_res-48:/layout_add_newtask.xml.flat",
+        "source": "com.example.schedulingproject.app-main-50:/layout/add_newtask.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_add_newexam.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\add_newexam.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\navigation_mobile_navigation2.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\navigation\\mobile_navigation2.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_add_circle_outline_24.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_add_circle_outline_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_baseline_delete.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_baseline_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_notifications_black_24dp.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_back.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_scrolling.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_scrolling.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_task_layout.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\task_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_selector.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_checklist_rtl_24.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_checklist_rtl_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_delete_screen.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_delete_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_activity_todo.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_todo.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_add_newtask.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\add_newtask.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_home_black_24dp.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_app_settings_alt_24.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_app_settings_alt_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\menu\\bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\navigation_mobile_navigation.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\navigation\\mobile_navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_add.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_dashboard.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_new_class.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_new_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_dashboard_black_24dp.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_dashboard_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_item_class.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\item_class.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_home_24.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_home_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_activity_fragment_caller.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_fragment_caller.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_baseline_home.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\baseline_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\menu_bottom_nav_menuworking.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\menu\\bottom_nav_menuworking.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_classes.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_classes.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_fragment_class_add.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\fragment_class_add.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_baseline_edit.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_baseline_edit.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\layout_activity_first.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\layout\\activity_first.xml"
+    },
+    {
+        "merged": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-merged_res-48:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\firef\\.gradle\\daemon\\8.2\\com.example.schedulingproject.app-main-50:\\drawable\\ic_launcher_background.xml"
+    }
+]
